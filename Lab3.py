@@ -11,6 +11,15 @@ def bubble_sort(arr, sorting_order):
 
     # Get number of elements in the list
     n = len(arr_result)
+    
+    if n>=10:
+        return 1
+    
+    elif n==0:
+        return 0
+    elif type(arr_result[0]) != int:
+        return 2 
+ 
 
     if n < 10:
         # Traverse through all array elements
